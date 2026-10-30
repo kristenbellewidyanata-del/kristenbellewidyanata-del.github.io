@@ -1,0 +1,161 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff5fb;
+    color: #704477;
+    font-family: "Times New Roman", serif;
+}
+
+/* Font */
+@font-face {
+    font-family: "singsong";
+    src: url("Singsong.otf");
+}
+
+/* Header */
+.header {
+    background-color: #f8dff0;
+    padding: 5px;
+    text-align: center;
+    font-size: 25pt;
+    font-family: "singsong";
+    color: #9665a8;
+}
+
+/* Navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #e4c9f5;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #704782;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #f7c5dc;
+    color: #a64d79;
+}
+
+/* Main list container */
+.list-container {
+    background-color: #f4cfe2;
+    border: 6px solid #d8b8ed;
+    padding: 10px;
+    margin: 15px;
+}
+
+/* Section headings */
+.list-container h3 {
+    color: #85549b;
+    margin: 8px 0 12px;
+    font-size: 16px;
+}
+
+/* Fruit list */
+.buah {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    background-color: #c49add;
+    border: 6px solid #a875ca;
+    padding: 8px;
+    margin: 0 0 15px;
+}
+
+.buah li {
+    background-color: #f8d7e8;
+    color: #754568;
+    border: 1px solid #e7afd0;
+    padding: 5px;
+    margin: 3px 0;
+}
+
+.buah li:nth-child(odd) {
+    background-color: #f3c4df;
+}
+
+/* Lorem ipsum list */
+.lorem {
+    list-style-type: square;
+    background-color: #d9c2f0;
+    border: 6px solid #b18ad2;
+    padding: 8px 8px 8px 30px;
+    margin: 0 0 15px;
+}
+
+.lorem li {
+    background-color: #ffe8f2;
+    color: #754568;
+    border: 1px solid #e9c1dc;
+    padding: 6px;
+    margin: 4px 0;
+}
+
+/* Icons list */
+.icons {
+    list-style-type: square;
+    background-color: #c49add;
+    border: 6px solid #a875ca;
+    padding: 8px 8px 8px 30px;
+    margin: 0 0 5px;
+}
+
+.icons li {
+    background-color: #f8d7e8;
+    color: #754568;
+    border: 1px solid #e7afd0;
+    padding: 6px;
+    margin: 4px 0;
+}
+
+.icons i {
+    color: #9665b5;
+    margin-right: 6px;
+    width: 18px;
+    text-align: center;
+}
+
+/* Hover effects */
+.buah li,
+.lorem li,
+.icons li {
+    transition: 0.3s;
+}
+
+.buah li:hover,
+.lorem li:hover,
+.icons li:hover {
+    background-color: #e8c7f7;
+    color: #704477;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #e4c9f5;
+    padding: 15px;
+    text-align: center;
+    color: #704782;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+
+    .list-container {
+        margin: 8px;
+        padding: 8px;
+    }
+}

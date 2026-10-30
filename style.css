@@ -1,0 +1,13 @@
+/* penulisan kode eksternal */
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: aqua;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15pt;
+    color: blueviolet;
+    background-color: chartreuse;
+}

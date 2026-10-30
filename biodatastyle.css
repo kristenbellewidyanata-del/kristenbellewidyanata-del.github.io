@@ -1,0 +1,397 @@
+ body{
+    background-image:url(ooo.jpg);
+    background-size: cover; 
+    background-position: center;
+}
+h2{ 
+    background-color: rgb(217, 185, 255); 
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-family:"singsong";
+}
+/*format font : .otf/.ttf*/
+@font-face {
+    font-family:"singsong" ;
+    src: url(singsong/Singsong.otf);
+} 
+h1{ 
+    background-color: rgb(217, 185, 255); 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 600px; 
+}
+div.biodata{
+    margin:30px auto ;
+    width:70%;
+    background-color: rgb(217, 185, 255); 
+    color:  rgb(255, 255, 255);
+    padding: 30px; 
+    border-radius: 12px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+} 
+div.content{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 60px; 
+}
+div.foto{ 
+    position: relative;
+    width: 250px;
+    height: 250px; 
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border: 3px solid  rgb(217, 185, 255); 
+}
+div.foto img{ 
+    position: absolute;
+    width: 100%; 
+    height: 100% ;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0; 
+    transform: scale(1.1);
+}
+div.foto img.bottom{ 
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{ 
+    opacity:1; 
+    transform: scale (1.1);
+} 
+div.Makanan{ 
+    display: flex;
+    justify-content: center;
+    /*flex-wrap: wrap;  Tulis ini agar kalau layar sempit */
+    gap: 20px;
+    text-align: center;
+} 
+img{ 
+    padding: 10px;
+}
+div.Cheesecake{
+   width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245); 
+} 
+div.Cheesecake:hover{ 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    transform : scale(1.1);
+}
+div.Icecream{ 
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245); 
+}
+div.Icecream:hover{ 
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.buldak{
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245); 
+}
+div.buldak:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.pizza{
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245); 
+}
+div.pizza:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0; 
+    transform: scale(1.1);
+}
+div.foto img.bottom{ 
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{ 
+    opacity:1; 
+    transform: scale (1.1);
+} 
+div.Minuman{ 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+} 
+img{ 
+    padding: 10px; 
+} 
+div.CocaCola{
+   width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245); 
+} 
+div.CocaCola:hover{ 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    transform : scale(1.1);
+}
+div.Koi{ 
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.Koi:hover{ 
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.Milkshake{
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.Milkshake:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.water{
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.water:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.AdoptMePet{ 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Tulis ini agar kalau layar sempit, Bluey dan The Loud House turun ke bawah secara otomatis dengan kotak utuh */
+    gap: 20px;
+    text-align: center;
+} 
+div.BalloonUnicorn{
+   width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+} 
+div.BalloonUnicorn:hover{ 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    transform : scale(1.1);
+}
+div.AfricanWildDog{ 
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.AfricanWildDog:hover{ 
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.Goose{
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.Goose:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.peppermintpenguin{
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.peppermintpenguin:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.SylvanianFamily{ 
+    display: flex;
+    justify-content: center;
+    /*flex-wrap: wrap;  Tulis ini agar kalau layar sempit */
+    gap: 20px;
+    text-align: center;
+} 
+img{ 
+    padding: 10px;
+}
+div.SanrioSylvanian{
+   width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+} 
+div.SanrioSylvanian:hover{ 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    transform : scale(1.1);
+}
+div.UnicornDuo{ 
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.UnicornDuo:hover{ 
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.BakeryBabies{
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.BakeryBabies:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.VeryBerryBaby{
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.VeryBerryBaby:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.PokemonCards{ 
+    display: flex;
+    justify-content: center;
+    /*flex-wrap: wrap;  Tulis ini agar kalau layar sempit */
+    gap: 20px;
+    text-align: center;
+} 
+img{ 
+    padding: 10px;
+}
+div.Clefairy{
+   width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+} 
+div.Clefairy:hover{ 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    transform : scale(1.1);
+}
+div.Morpeko{ 
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.Morpeko:hover{ 
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.Tinkatink{
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.Tinkatink:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.Dragonite{
+    width: 250px;
+   height: 280px;
+   border-radius: 25px;
+   box-shadow:0 4px 8px 0 rgba(96,56,56,0.9);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(166, 101, 245);
+}
+div.Dragonite:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}

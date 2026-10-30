@@ -1,0 +1,280 @@
+
+*
+* {
+    box-sizing: border-box;
+}
+
+.special{
+    text-align: center;
+    font-size: 25pt;
+}
+
+body {
+    margin: 0;
+}
+
+/* style pada header */
+.header {
+    background-color: #f8dff0;
+    padding: 5px;
+    text-align: center;
+    font-size: 25pt;
+    font-family: "singsong";
+    color: #9665a8;
+}
+
+@font-face {
+    font-family: "singsong";
+    src: url(Singsong.otf);
+}
+
+/* style pada topnav */
+.topnav {
+    overflow: hidden;
+    background-color: #e4c9f5;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #704782;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #f7c5dc;
+    color: #a64d79;
+}
+
+.footer {
+    background-color: #e4c9f5;
+    padding: 15px;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b9e9f5;
+    background-image: url("beach.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN BOX */
+
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: rgba(255, 250, 232, 0.95);
+    padding: 25px;
+    border: 4px solid #55c1cf;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(30, 110, 130, 0.35);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.container:hover {
+    box-shadow: 0 15px 40px rgba(20, 120, 145, 0.45);
+}
+
+/* MAIN TITLE */
+
+h1 {
+    text-align: center;
+    color: #087f8c;
+    font-family: "Singsong", Georgia, serif;
+    font-size: 40px;
+    padding: 15px;
+    cursor: pointer;
+    transition:
+        color 0.4s ease,
+        transform 0.4s ease,
+        letter-spacing 0.4s ease,
+        text-shadow 0.4s ease;
+}
+
+h1:hover {
+    color: #ef8066;
+    transform: scale(1.08) rotate(-1deg);
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 0px #f8d9a0;
+}
+
+/* NAME */
+
+h2 {
+    text-align: center;
+    color: #e27c62;
+    font-family: "Singsong", Georgia, serif;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+    color: #087f8c;
+    transform: translateY(-5px);
+}
+
+/* SECTION TITLES */
+
+h3 {
+    text-align: center;
+    color: #087f8c;
+    background-color: #d9f5f6;
+    padding: 12px;
+    border-top: 3px solid #55c1cf;
+    border-bottom: 3px solid #55c1cf;
+    border-radius: 15px;
+    font-family: Georgia, serif;
+    transition:
+        background-color 0.4s ease,
+        transform 0.4s ease,
+        letter-spacing 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+h3:hover {
+    background-color: #bcecf0;
+    transform: translateY(-4px);
+    letter-spacing: 2px;
+    box-shadow: 0 6px 15px rgba(50, 150, 165, 0.3);
+}
+
+/* PARAGRAPHS */
+
+p {
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.7;
+    color: #31545a;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+p:hover {
+    color: #087f8c;
+}
+
+/* FIRST IMAGE AREA */
+
+.gambar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.gambar img {
+    width: 40%;
+    height: 230px;
+    object-fit: cover;
+    border: 5px solid #55c1cf;
+    border-radius: 35px;
+    box-shadow: 0 7px 15px rgba(40, 110, 125, 0.4);
+    cursor: pointer;
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease,
+        border-radius 0.5s ease,
+        filter 0.5s ease;
+}
+
+.gambar img:hover {
+    transform: scale(1.08) translateY(-10px) rotate(1deg);
+    box-shadow:
+        0 15px 30px rgba(20, 120, 145, 0.5),
+        0 0 0 5px rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    filter: brightness(1.08) saturate(1.15);
+}
+
+.gambar img:first-child:hover {
+    transform: scale(1.08) translateY(-10px) rotate(-2deg);
+}
+
+.gambar img:last-child:hover {
+    transform: scale(1.08) translateY(-10px) rotate(2deg);
+}
+
+/* POLLUTION CARDS */
+
+.jenis-pencemaran,
+.gambar-dampak,
+.gambar-cara {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.kartu {
+    width: 220px;
+    background-color: #fffaf0;
+    border: 3px solid #55c1cf;
+    border-radius: 22px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(40, 110, 125, 0.3);
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        background-color 0.4s ease;
+}
+
+.kartu:hover {
+    transform: translateY(-10px) scale(1.04);
+    background-color: #e8fafa;
+    box-shadow:
+        0 15px 25px rgba(20, 120, 145, 0.4),
+        0 0 0 4px rgba(255, 255, 255, 0.8);
+}
+
+.kartu img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+
+.kartu:hover img {
+    transform: scale(1.06);
+    filter: brightness(1.08) saturate(1.1);
+}
+
+.kartu h4 {
+    color: #087f8c;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin: 12px 5px 8px;
+}
+
+.kartu p {
+    text-indent: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+/* SMALL EXTRA EFFECT */
+
+.kartu:nth-child(odd):hover {
+    transform: translateY(-10px) rotate(-1deg) scale(1.04);
+}
+
+.kartu:nth-child(even):hover {
+    transform: translateY(-10px) rotate(1deg) scale(1.04);
+}
